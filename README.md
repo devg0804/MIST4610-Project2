@@ -264,8 +264,16 @@ Justification: Identifying customers who are interested in a specific type of co
 # Tableau Visualizations
 
 1. ![Sheet 1](https://github.com/user-attachments/assets/b83f1d8f-6ebe-45b2-bf17-255621e338ba)
+   
+ Justification: This visual helps us visualize the amount of revenue generated and how that relates to the number of awards the movie or TV show earns. With this visual, we can see  that revenues in the $200M-$600M usually earn about 1 award. We can see that many movies in the $600M+ range earn 2-3 awards. When examining this visual, it seems strange that there  are many awards in the $200M-$600M range. This density is due to many TV shows earning an award and those TV shows usually generating less than a movie. Manages could use this visualization to identify some correlation between awards and revenue numbers, in order to maximize success.
+
 2. ![Sheet 2](https://github.com/user-attachments/assets/d22d242a-fb94-48d2-940c-958c2fd685e5)
+   
+ Justification: This visual helps us visualize the amount of revenue generated and how that relates to the number of awards the movie or TV show earns. With this visual, we can see  that revenues in the $200M-$600M usually earn about 1 award. We can see that many movies in the $600M+ range earn 2-3 awards. When examining this visual, it seems strange that there are many awards in the $200M-$600M range. This density is due to many TV shows earning an award and those TV shows usually generating less than a movie. Manages could use this visualization to identify some correlation between awards and revenue numbers, in order to maximize success.
+   
 3. ![Sheet 3](https://github.com/user-attachments/assets/2793227b-5cf6-4a07-a670-3ac0c5b36846)
+ 
+Justification: This histogram displays the total revenue, on a studio basis, for the entitety of the time data is available. Based on the data we can see that Walt Disney and Pixar Animation have the largest total revenues. This is most likely due to each of the resepective studio's long history of success. In the second group of studios, we can see 20th Century Fox, Warner Bros, and Univsersal Pictures. These studios are just as large as Diney, but have a shorter history so their values are smaller. Finally, we can see some of the newest studios, Lionsgate, New Line, and Netflix. These studios are younger, meaning they have a smaller total revenue number. A manager looking at this data may see that Netflix has had immense success despite its short history, and may choose a more streaming-focused distribution model instead of the more tradtional one with a box-office release.
 
 
 
