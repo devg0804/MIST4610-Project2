@@ -34,17 +34,12 @@ Awards: This table tracks awards that movies or actors have won, including the a
 ![Project 2 Data Model (1)](https://github.com/user-attachments/assets/125f21cd-23da-4bda-9b3c-1e83de2ba454)
 
 # Data Dictionary
-![Screenshot 2024-10-13 164219](https://github.com/user-attachments/assets/63df644c-b358-47cf-9137-8aad183492b3)
-![Screenshot 2024-10-13 164230](https://github.com/user-attachments/assets/77205054-6424-4e4b-afa3-3ad75d68dee8)
-![Screenshot 2024-10-13 164242](https://github.com/user-attachments/assets/10c5e8ed-db87-4b92-94f4-a8dd40c6015b)
-![Screenshot 2024-10-13 164253](https://github.com/user-attachments/assets/d01cc9d2-d233-44e5-bacc-4f6996b7f6aa)
-![Screenshot 2024-10-13 164303](https://github.com/user-attachments/assets/67009a5c-795c-4e91-960c-2721aab7d678)
-![Screenshot 2024-10-13 164312](https://github.com/user-attachments/assets/fc2ea5aa-02ed-4015-b699-722aa3ff9d61)
-![Screenshot 2024-10-13 164323](https://github.com/user-attachments/assets/5cbb4387-7b70-478d-81a2-cddb442fc62d)
-![Screenshot 2024-10-13 164332](https://github.com/user-attachments/assets/f6547b62-fc2e-4466-8858-173f28b1afd5)
-![Screenshot 2024-10-13 164341](https://github.com/user-attachments/assets/e3e707b0-9212-4b18-9efc-6783c165ed51)
-![Screenshot 2024-10-13 164352](https://github.com/user-attachments/assets/41789c9f-6eb4-4ad8-8afa-ba7468932308)
-![Screenshot 2024-10-13 164400](https://github.com/user-attachments/assets/e1be792b-82b7-406f-9aae-86999a29fc24)
+![Screenshot 2024-12-02 160354](https://github.com/user-attachments/assets/f34399ba-217d-4bf0-aedb-7dedee1217bb)
+![Screenshot 2024-12-02 160539](https://github.com/user-attachments/assets/09b81bd1-9fc2-4079-b7f6-0db572b07c83)
+![Screenshot 2024-12-02 160601](https://github.com/user-attachments/assets/f983bd33-3719-485a-b116-c4d30eb4656b)
+![Screenshot 2024-12-02 160728](https://github.com/user-attachments/assets/8cb2db90-a0ea-457e-a0a1-bc36974190e4)
+![Screenshot 2024-12-02 160750](https://github.com/user-attachments/assets/d2397a58-c877-42f2-9dd3-b8d279995027)
+
 
 
 
