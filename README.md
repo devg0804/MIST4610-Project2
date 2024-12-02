@@ -18,7 +18,7 @@ The movie class is connected to the greater movie industry through the awards, b
 
 # Data Model
 
-Explanation of Data Model
+Explanation of Data Model:
 This data model represents a movie database with several interrelated entities, each storing specific information about movies, actors, reviews, and other relevant details. Here's a breakdown of the main components:
 Movie: This is the central entity, which stores basic information about movies, including the title, release year, rating, duration, and links to related entities like director, studio, and genre.
 Actor: This entity holds information about actors, including their name, gender, and date of birth. It is linked to the movie table through the movie_Actor table, establishing a many-to-many relationship (i.e., an actor can appear in multiple movies, and a movie can have multiple actors).
