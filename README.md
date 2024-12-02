@@ -232,7 +232,7 @@ Justification: Identifying underperforming movies allows management to flag thes
 - Where Genre.genreName = genreInput AND movie.releaseYear BETWEEN begYearInput AND
 - endYearInput AND revenue > revenueInput;
 
-Justification: This procedure enables management to focus on specific genres and time periods to assess the success of their investment strategies within those contexts. By specifying date ranges, management can analyze how movie performance in a genre has evolved over time and adapt to changing audience preferences. A procedure also allows flexibility than a regular query does.
+Justification: This procedure enables management to focus on specific genres and time periods to assess the success of their investment strategies within those contexts. By specifying date ranges, management can analyze how movie performance in a genre has evolved over time and adapt to changing audience preferences. A procedure also allows more flexibility than a regular query.
 
 13. Of movies released in the last 15 years, which genres have a percentage of movies produced greater than 10%?
 - Select genreName, count(genreName), (count(genreName) / (select count(*) From movie where
