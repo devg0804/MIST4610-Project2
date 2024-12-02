@@ -265,7 +265,7 @@ Justification: Identifying customers who are interested in a specific type of co
 
 1. ![Sheet 1](https://github.com/user-attachments/assets/b83f1d8f-6ebe-45b2-bf17-255621e338ba)
    
- Justification: This visual helps us visualize the amount of revenue generated and how that relates to the number of awards the movie or TV show earns. With this visual, we can see  that revenues in the $200M-$600M usually earn about 1 award. We can see that many movies in the $600M+ range earn 2-3 awards. When examining this visual, it seems strange that there  are many awards in the $200M-$600M range. This density is due to many TV shows earning an award and those TV shows usually generating less than a movie. Manages could use this visualization to identify some correlation between awards and revenue numbers, in order to maximize success.
+ Justification: This line-chart visualizes the total box office revenue for all movies within their respective years. Based on this chart, a film enthusist could see some of the most sucessful box office years dating back to the 1930s. Movie through history, we can see that box office sales peaked in the mid-1970s before declining until the 1990s. After that the movie industry had some good years and bad, with an overall upward trend. In recent years, we can see an dramtic increase in revenue in 2019, most likely due to several box office hits like "Avengers: Endgame", "The Lion King", and "Star Wars: The Rise of Skywalker." That revenue, however, quickly disappeared in 2020 with the onset of the COVID-19 pandemic.
 
 2. ![Sheet 2](https://github.com/user-attachments/assets/d22d242a-fb94-48d2-940c-958c2fd685e5)
    
