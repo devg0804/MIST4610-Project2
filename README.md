@@ -275,6 +275,8 @@ Justification: Identifying customers who are interested in a specific type of co
  
 Justification: This histogram displays the total revenue, on a studio basis, for the entirety of the time data is available. Based on the data we can see that Walt Disney and Pixar Animation have the largest total revenues. This is most likely due to each of the resepective studio's long history of success. In the second group of studios, we can see 20th Century Fox, Warner Bros, and Univsersal Pictures. These studios are just as large as Diney, but have a shorter history so their values are smaller. Finally, we can see some of the newest studios, Lionsgate, New Line, and Netflix. These studios are younger, meaning they have a smaller total revenue number. A manager looking at this data may see that Netflix has had immense success despite its short history, and may choose a more streaming-focused distribution model instead of the more tradtional one with a box-office release. On the flip side, it may question why Universal, which is still a large movie studio with its own theme park, is not able to come close to studios like Walt Disney and Pixar. Information like this can influence who production companies and actors choose to work with.
 
+[Download the Tableau Packaged Workbook](https://github.com/ColbyMIST/MIST4610-Project2/raw/refs/heads/main/MIST4610Project2.twbx)
+
 
 
 
