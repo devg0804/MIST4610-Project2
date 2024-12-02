@@ -253,10 +253,10 @@ Understanding which genres consistently outperform in revenue helps guide genre 
 15.  Identify customers who have reviewed movies but not TV shows
 
 - select Customer.idcustomer, name, count(distinct Movie_Review.idmovie) as `Movies reviewed`, count(distinct TV_Show_Review.idShow) as `Shows reviewed` from Customer
-left join Movie_Review on Customer.idcustomer = Movie_Review.idcustomer left
-join TV_Show_Review on Customer.idcustomer = TV_Show_Review.idcustomer
-group by Customer.idcustomer, name HAVING `Movies reviewed` > 0
-AND `Shows reviewed` = 0;
+- left join Movie_Review on Customer.idcustomer = Movie_Review.idcustomer left
+- join TV_Show_Review on Customer.idcustomer = TV_Show_Review.idcustomer
+- group by Customer.idcustomer, name HAVING `Movies reviewed` > 0
+- AND `Shows reviewed` = 0;
 
 # Tableau Visualizations
 
