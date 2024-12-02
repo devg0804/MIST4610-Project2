@@ -219,6 +219,8 @@ Understanding which genres consistently outperform in revenue helps guide genre 
 - Group BY movie.idmovie
 - Having Avg(movie.rating) < 8 AND SUM(TicketsSold) < 5000;
 
+Justification: Identifying underperforming movies allows management to flag these movies for further investigation. This can allow management to make adjustments to where studios spend their money and how they market movies. This also allows them to see what kind of movies (ex. Romance) tend to do worse and avoid making those movies in the future.
+
 12. Which movies from a specific genre released, between a range of years have generated revenue above a certain threshold?
 
 - CREATE Procedure moviesWithGenreRevenueYear(IN genreInput VARCHAR(45),
@@ -230,15 +232,17 @@ Understanding which genres consistently outperform in revenue helps guide genre 
 - Where Genre.genreName = genreInput AND movie.releaseYear BETWEEN begYearInput AND
 - endYearInput AND revenue > revenueInput;
 
-13. Of movies released in the last 15 years, which genres have a percentage of movies
-    
-- produced greater than 10%?
+Justification: This procedure enables management to focus on specific genres and time periods to assess the success of their investment strategies within those contexts. By specifying date ranges, management can analyze how movie performance in a genre has evolved over time and adapt to changing audience preferences. A procedure also allows flexibility than a regular query does.
+
+13. Of movies released in the last 15 years, which genres have a percentage of movies produced greater than 10%?
 - Select genreName, count(genreName), (count(genreName) / (select count(*) From movie where
 - releaseYear between 2009 and 2024)) * 100 As `percentage` From Genre
 - Join movie on movie.idgenre = Genre.idgenre
 - Where releaseYear between 2009 AND 2024
 - Group By genreName
 - Having `percentage` > 10
+
+Justification: Allows management to see the trend in movie production in the modern age. Management can use the query to see what genres are dominating the box office, and they can use this information to adjust their production decisions in the future. For example, if they see that fantasy movies are dominating the market, they can focus on producing these movies and adjust their marketing to appeal to younger audiences, like elementary school children. 
 
  14. For each actor, list the number of movies they have performed in for each genre, if the number is > 3
      
@@ -250,6 +254,8 @@ Understanding which genres consistently outperform in revenue helps guide genre 
  - Having COUNT(*) > 3
  - ORDERBYCOUNT(*);
 
+Justification: Management can use this data to make casting decisions. For example, if a studio wants to make an action movie and is looking for someone to play the main character, they can compare how many action movies Actor A (ex. 3) and Actor B (ex. 2) have performed in. If they want somene with more experience, they might hire Actor A. However, if they want someone with less experience who is more likely to be cheaper, they might hire Actor B. 
+
 15.  Identify customers who have reviewed movies but not TV shows
 
 - select Customer.idcustomer, name, count(distinct Movie_Review.idmovie) as `Movies reviewed`, count(distinct TV_Show_Review.idShow) as `Shows reviewed` from Customer
@@ -257,6 +263,8 @@ Understanding which genres consistently outperform in revenue helps guide genre 
 - join TV_Show_Review on Customer.idcustomer = TV_Show_Review.idcustomer
 - group by Customer.idcustomer, name HAVING `Movies reviewed` > 0
 - AND `Shows reviewed` = 0;
+
+Justification: Identifying customers who are interested in a specific type of content helps management understand audience preferences and tailor content recommendations  accordingly. They can also do the opposite and try to offer discounts and incentives to try to get these customers to watch shows, like offering free trials on subscription services. It also helps identify opportunities to engage inactive customers (in the TV show department) by recommending specific TV shows based on the movies they reviewed.
 
 # Tableau Visualizations
 
