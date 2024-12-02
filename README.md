@@ -51,7 +51,7 @@ Awards: This table tracks awards that movies or actors have won, including the a
 # Queries
 
 ![Query Chart](https://github.com/user-attachments/assets/c3d9b774-4d8e-4a99-8f89-792606804393)
-
+![Screenshot 2024-12-02 105259](https://github.com/user-attachments/assets/c57aa6ca-d4a7-46bb-94e1-1e2ea6ac0768)
 
 1. Which movies have an average rating above 7? 
 
@@ -63,7 +63,6 @@ Awards: This table tracks awards that movies or actors have won, including the a
 - ORDER BY AVG(reviewScore) DESC; 
 
 ![Screenshot 2024-10-13 174226](https://github.com/user-attachments/assets/8f2be987-229e-46fd-8984-0edf79e93639)
-![Screenshot 2024-12-02 105259](https://github.com/user-attachments/assets/c57aa6ca-d4a7-46bb-94e1-1e2ea6ac0768)
 
 
 Justification:  
