@@ -262,14 +262,20 @@ Justification: Identifying customers who are interested in a specific type of co
 1. ![Sheet 1](https://github.com/user-attachments/assets/b83f1d8f-6ebe-45b2-bf17-255621e338ba)
    
  Justification: This line chart visualizes the total box office revenue for all movies within their respective years. Based on this chart, a film enthusiast could see some of the most successful box office years dating back to the 1930s. Throughout history, we can see that box office sales peaked in the mid-1970s before declining until the 1990s. After that, the movie industry had some good years and bad, with an overall upward trend. In recent years, we can see an dramatic increase in revenue in 2019, most likely due to several box office hits like "Avengers: Endgame", "The Lion King", and "Star Wars: The Rise of Skywalker." That revenue, however, quickly disappeared in 2020 with the onset of the COVID-19 pandemic. This graph is useful in that it shows the overall trend of movie revenue over time and that movie companies should not underestimate global events, which can drastically change the total revenue for a year. It also shows that the movie industry has still been recovering from Covid over the last few years, and if it hopes to emulate the success it had before COVID-19, it will need big releases from studios like Marvel, Disney, and Universal. 
+ 
+Question answered: Over time, how has the total amount of revenue in the movie industry changed, and what years in particular are the most influential on the industry?
 
 2. ![Sheet 4](https://github.com/user-attachments/assets/db04a098-c8a0-48b3-a551-ff088ab4053f)
 
  Justification: This histogram displays the amount of tickets sold by movies winning different awards. Based on this visualization, we can tell that movies that win the "Best Director" award sell more tickets on average than those winning an award for just an actor. A film analyst may be able to use this data to show that moviegoers often value the story and plot, more than they may value seeing a famous actor or actress. A movie analyst would also be able to determine that a famous actress will often sell more tickets than a famous actor, at least in the case of leading roles, which could be used to futher examine the gender breakdown of a particular film or TV show.
+
+ Question answered: Out of all award-winning movies, which awards lead to the most success (based on average tickets sold)? What trends does this data uncover about the audience?
    
 3. ![Sheet 3](https://github.com/user-attachments/assets/2793227b-5cf6-4a07-a670-3ac0c5b36846)
  
  Justification: This histogram displays the total revenue, on a studio basis, for the entirety of the time data is available. Based on the data we can see that Walt Disney and Pixar Animation have the largest total revenues. This is most likely due to each of the resepective studio's long history of success. In the second group of studios, we can see 20th Century Fox, Warner Bros, and Univsersal Pictures. These studios are just as large as Diney, but have a shorter history so their values are smaller. Finally, we can see some of the newest studios, Lionsgate, New Line, and Netflix. These studios are younger, meaning they have a smaller total revenue number. A manager looking at this data may see that Netflix has had immense success despite its short history, and may choose a more streaming-focused distribution model instead of the more tradtional one with a box-office release. On the flip side, it may question why Universal, which is still a large movie studio with its own theme park, is not able to come close to studios like Walt Disney and Pixar. Information like this can influence who production companies and actors choose to work with.
+
+ Question answered: Out of studios that made at most 32 movies and at minimum 2 movies, which have generated the most and least revenue? How do streaming platforms compare with smaller movie studios?
 
 4. ![Dashboard](https://github.com/user-attachments/assets/00aa0fa2-0148-4ebd-9994-b5ed52d18a99)
 
