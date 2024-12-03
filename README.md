@@ -44,7 +44,7 @@ The Awards table was updated to support awards for both movies and TV shows, add
 ![Query Chart](https://github.com/user-attachments/assets/c3d9b774-4d8e-4a99-8f89-792606804393)
 ![Screenshot 2024-12-02 105259](https://github.com/user-attachments/assets/c57aa6ca-d4a7-46bb-94e1-1e2ea6ac0768)
 
-1. Which movies have an average rating above 7? 
+#Query1. Which movies have an average rating above 7? 
 
 - SELECT movie.genre, AVG(reviewScore)   
 - FROM review   
@@ -60,7 +60,7 @@ Justification:
 
 This query helps managers identify high-performing genres that consistently receive favorable audience reviews. It can inform decisions on what types of movies studios should produce more frequently. 
 
-2. Select the names of movies where the number of tickets sold is higher than the average of movies in North America.
+#Query2. Select the names of movies where the number of tickets sold is higher than the average of movies in North America.
 
 - SELECT title, TicketsSold   
 - FROM box_office   
@@ -76,7 +76,7 @@ Justification:
 
 This query provides insights into which movies are outperforming in a key market (North America), helping managers focus marketing and distribution efforts. This information helps movie producers know what kind of movies they should produce if they want to appeal to this specific market.
 
-3. Which studios have won at least 3 Academy Awards for their movies?
+#Query3. Which studios have won at least 3 Academy Awards for their movies?
 
 - SELECT COUNT(awardName) AS `number of awards`, studio.name   
 - FROM studio   
@@ -92,7 +92,7 @@ Justification:
 
 Tracking which studios have consistently won prestigious awards is valuable for partnerships and investment decisions. Only including movies that have won at least 3 times filters results to only show studios that have a proven track record of success. 
 
-4. List movies, their release year, and their director if the movie has no awards, ordered by release year.
+#Query4. List movies, their release year, and their director if the movie has no awards, ordered by release year.
 
 - SELECT title, name, releaseYear   
 - FROM movie   
@@ -106,7 +106,7 @@ Justification:
 
 Identifying movies without awards can help managers evaluate underappreciated films for potential re-releases or marketing opportunities. These results can also lead them to understand what customers don’t like to see in their movies. 
 
-5. Which actor has appeared in the most award-winning movies? 
+#Query5. Which actor has appeared in the most award-winning movies? 
 
 - SELECT Actor.idActor, name, COUNT(DISTINCT awards.idmovie) AS `Number of Award-Winning Movies`   
 - FROM Actor   
@@ -121,7 +121,7 @@ Justification:
 
 This query helps managers identify actors who consistently contribute to award-winning films, which can inform casting decisions. 
 
-6. Which directors are the most successful based on revenue and number of movies directed?
+#Query6. Which directors are the most successful based on revenue and number of movies directed?
 
 - SELECT director.name, COUNT(title) AS `number of movies directed`, SUM(box_office.revenue) AS `total revenue`   
 - FROM director   
@@ -137,7 +137,7 @@ Justification:
 
 Tracking the most financially successful directors helps in strategic planning for future projects and collaborations. 
 
-7. Select the release year, number of movies produced that year, and total revenue for those movies (only for movies over 2 hours, rated above 7, released post-2009). 
+#Query7. Select the release year, number of movies produced that year, and total revenue for those movies (only for movies over 2 hours, rated above 7, released post-2009). 
 
 - SELECT releaseYear, COUNT(*), SUM(revenue)   
 - FROM movie   
@@ -154,7 +154,7 @@ Justification:
 
 This query helps managers analyze the performance of high-quality, long-duration movies in the past decade, allowing for data-driven future investments.
 
-8. Which actors appear in movies with average box office revenue higher than the overall average?
+#Query8. Which actors appear in movies with average box office revenue higher than the overall average?
 
 - SELECT Actor.idActor, name, AVG(revenue) AS `Average Box Office Revenue`   
 - FROM Actor   
@@ -170,7 +170,7 @@ Justification:
 
 Identifying actors associated with high-revenue films helps managers make more strategic casting choices for profitable outcomes. This query also allows management to see the exact relationship between the actors of movies and the amount of revenue the movie generates.
 
-9. At which times do movies sell the most tickets? 
+#Query9. At which times do movies sell the most tickets? 
 
 - SELECT time, theaterLocation, title, date, ticketSales   
 - FROM movie_screening   
@@ -183,7 +183,7 @@ Justification:
 
 Knowing when movies perform best can guide theaters in scheduling showtimes to maximize sales and profit. 
 
-10. Which genre has the most movies with a box office revenue above the average?
+#Query10. Which genre has the most movies with a box office revenue above the average?
 
 - select genreName, count(*) as `number of movies` 
 - from genre 
@@ -200,7 +200,7 @@ Justification:
 
 Understanding which genres consistently outperform in revenue helps guide genre focus in future productions. 
 
-11. Identify underperforming movies based on total tickets sold and the average rating
+#Query11. Identify underperforming movies based on total tickets sold and the average rating
 
 - Select movie.Title,
 - AVG(movie.rating),
@@ -212,7 +212,7 @@ Understanding which genres consistently outperform in revenue helps guide genre 
 
 Justification: Identifying underperforming movies allows management to flag these movies for further investigation. This can allow management to make adjustments to where studios spend their money and how they market movies. This also allows them to see what kind of movies (ex. Romance) tend to do worse and avoid making those movies in the future.
 
-12. Which movies from a specific genre released, between a range of years have generated revenue above a certain threshold?
+#Query12. Which movies from a specific genre released, between a range of years have generated revenue above a certain threshold?
 
 - CREATE Procedure moviesWithGenreRevenueYear(IN genreInput VARCHAR(45),
 - begYearInput INT, endYearInput INT, revenueInput INT)
@@ -225,7 +225,7 @@ Justification: Identifying underperforming movies allows management to flag thes
 
 Justification: This procedure enables management to focus on specific genres and time periods to assess the success of their investment strategies within those contexts. By specifying date ranges, management can analyze how movie performance in a genre has evolved over time and adapt to changing audience preferences. A procedure also allows more flexibility than a regular query.
 
-13. Of movies released in the last 15 years, which genres have a percentage of movies produced greater than 10%?
+#Query13. Of movies released in the last 15 years, which genres have a percentage of movies produced greater than 10%?
 - Select genreName, count(genreName), (count(genreName) / (select count(*) From movie where
 - releaseYear between 2009 and 2024)) * 100 As `percentage` From Genre
 - Join movie on movie.idgenre = Genre.idgenre
@@ -235,7 +235,7 @@ Justification: This procedure enables management to focus on specific genres and
 
 Justification: Allows management to see the trend in movie production in the modern age. Management can use the query to see what genres are dominating the box office, and they can use this information to adjust their production decisions in the future. For example, if they see that fantasy movies are dominating the market, they can focus on producing these movies and adjust their marketing to appeal to younger audiences, like elementary school children. 
 
- 14. For each actor, list the number of movies they have performed in for each genre, if the number is > 3
+ #Query14. For each actor, list the number of movies they have performed in for each genre, if the number is > 3
      
  -  Select Actor.name, genreName, COUNT(*) From Actor
  - Join Movie_has_Actor ON Actor.idActor = Movie_has_Actor.Actor_idActor
@@ -247,7 +247,7 @@ Justification: Allows management to see the trend in movie production in the mod
 
 Justification: Management can use this data to make casting decisions. For example, if a studio wants to make an action movie and is looking for someone to play the main character, they can compare how many action movies Actor A (ex. 3) and Actor B (ex. 2) have performed in. If they want somene with more experience, they might hire Actor A. However, if they want someone with less experience who is more likely to be cheaper, they might hire Actor B. 
 
-15.  Identify customers who have reviewed movies but not TV shows
+#Query15.  Identify customers who have reviewed movies but not TV shows
 
 - select Customer.idcustomer, name, count(distinct Movie_Review.idmovie) as `Movies reviewed`, count(distinct TV_Show_Review.idShow) as `Shows reviewed` from Customer
 - left join Movie_Review on Customer.idcustomer = Movie_Review.idcustomer left
